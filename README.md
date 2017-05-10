@@ -5,10 +5,16 @@ Datadog middleware for Connect JS / Express
 
 ## Usage
 
+```
+npm install @bufferapp/connect-datadog -S
+```
+
 Add middleware immediately before your router.
 
-  app.use(require("connect-datadog")({}));
-  app.use(app.router);
+```js
+app.use(require("connect-datadog")({}));
+app.use(app.router);
+```
 
 ## Options
 
