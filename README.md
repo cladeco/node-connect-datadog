@@ -12,8 +12,20 @@ npm install @bufferapp/connect-datadog -S
 Add middleware immediately before your router.
 
 ```js
-app.use(require("connect-datadog")({}));
-app.use(app.router);
+const connectDatadog = require("connect-datadog")
+app.use(connectDatadog({}))
+app.use(app.router)
+```
+
+## StatsD Client Arguments
+
+You can also pass arguments to the StatsD Client after your options:
+
+```js
+connectDatadog()
+app.use(connectDatadog({
+  tags: ['some:tag']
+}, 'some.hostname', 8125))
 ```
 
 ## Options
@@ -21,7 +33,7 @@ app.use(app.router);
 All options are optional.
 
 * `dogstatsd` node-dogstatsd client. `default = new (require("node-dogstatsd")).StatsD()`
-* `stat` *string* name for the stat. `default = "node.express.router"`
+* `stat` *string* name for the stat. `default = "buffer.server"`
 * `tags` *array* of tags to be added to the histogram. `default = []`
 * `sampleRate` *number* sends only a sample of data to StatsD `default: 1`
 * `path` *boolean* include path tag. `default = false`
