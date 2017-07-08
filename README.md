@@ -1,12 +1,12 @@
 # node-connect-datadog
 
-Datadog middleware for Connect JS / Express
+Datadog middleware for Connect.js / Express.js
 
 
 ## Usage
 
 ```
-npm install @bufferapp/connect-datadog -S
+npm install git://github.com/cladeco/node-connect-datadog.git#commit -S
 ```
 
 Add middleware immediately before your router.
