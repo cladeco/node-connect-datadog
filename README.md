@@ -33,7 +33,7 @@ app.use(connectDatadog({
 All options are optional.
 
 * `dogstatsd` node-dogstatsd client. `default = new (require("node-dogstatsd")).StatsD()`
-* `stat` *string* name for the stat. `default = "buffer.server"`
+* `stat` *string* name for the stat. `default = "clade-server"`
 * `tags` *array* of tags to be added to the histogram. `default = []`
 * `sampleRate` *number* sends only a sample of data to StatsD `default: 1`
 * `path` *boolean* include path tag. `default = false`

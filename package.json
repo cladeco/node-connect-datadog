@@ -1,11 +1,11 @@
 {
-  "name": "@bufferapp/connect-datadog",
-  "version": "0.2.0",
-  "description": "Datadog middleware for Connect JS / Express",
+  "name": "@cladeco/connect-datadog",
+  "version": "0.2.1",
+  "description": "Datadog middleware for Connect.js / Express.js",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/bufferapp/node-connect-datadog.git"
+    "url": "git://github.com/cladeco/node-connect-datadog.git"
   },
   "keywords": [
     "datadog",
